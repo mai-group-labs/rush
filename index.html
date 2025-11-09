@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rush Project Team</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 3px solid #4a90e2;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #4a90e2;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            color: #cccccc;
+        }
+        
+        main {
+            flex: 1;
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+            width: 100%;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .team-member {
+            background: #1a1a1a;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #333333;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(74, 144, 226, 0.3);
+            border-color: #4a90e2;
+        }
+        
+        .team-member h2 {
+            color: #4a90e2;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .team-member .role {
+            color: #888888;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        
+        .team-member .description {
+            color: #cccccc;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        footer {
+            background: #1a1a1a;
+            text-align: center;
+            padding: 1.5rem;
+            border-top: 3px solid #4a90e2;
+            color: #888888;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rush Project Team</h1>
+        <p>Meet the talented individuals behind Rush</p>
+    </header>
+    
+    <main>
+        <div class="team-grid">
+            <div class="team-member">
+                <h2>Project Lead</h2>
+                <p class="role">Strategic Direction & Oversight</p>
+                <p class="description">Leading the vision and strategic direction of the Rush project, ensuring alignment with organizational goals and stakeholder expectations.</p>
+            </div>
+            
+            <div class="team-member">
+                <h2>Technical Architect</h2>
+                <p class="role">System Design & Architecture</p>
+                <p class="description">Designing robust and scalable architecture, establishing technical standards, and guiding implementation decisions.</p>
+            </div>
+            
+            <div class="team-member">
+                <h2>Lead Developer</h2>
+                <p class="role">Core Development</p>
+                <p class="description">Implementing core features, maintaining code quality, and mentoring development team members.</p>
+            </div>
+            
+            <div class="team-member">
+                <h2>UX/UI Designer</h2>
+                <p class="role">User Experience & Interface</p>
+                <p class="description">Creating intuitive and engaging user experiences, designing beautiful interfaces, and ensuring accessibility standards.</p>
+            </div>
+            
+            <div class="team-member">
+                <h2>QA Engineer</h2>
+                <p class="role">Quality Assurance</p>
+                <p class="description">Ensuring product quality through comprehensive testing, automation, and continuous improvement of testing processes.</p>
+            </div>
+            
+            <div class="team-member">
+                <h2>DevOps Specialist</h2>
+                <p class="role">Infrastructure & Deployment</p>
+                <p class="description">Managing infrastructure, CI/CD pipelines, and ensuring reliable deployment and monitoring systems.</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Rush Project | MAI Group Labs</p>
+    </footer>
+</body>
+</html>
