@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rush Project Team</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid #333;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #888;
+            margin-bottom: 2rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .team-card {
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            border-color: #667eea;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+
+        .team-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #667eea;
+        }
+
+        .role {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .description {
+            color: #ccc;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 4rem;
+            border-top: 2px solid #333;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rush Project Team</h1>
+            <p class="subtitle">Meet the talented individuals driving the Rush project forward</p>
+        </header>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <h2>Project Lead</h2>
+                <p class="role">Leadership & Strategy</p>
+                <p class="description">
+                    Responsible for overall project vision, strategy, and coordination. Ensures alignment with organizational goals and manages stakeholder relationships.
+                </p>
+            </div>
+
+            <div class="team-card">
+                <h2>Technical Architect</h2>
+                <p class="role">Architecture & Design</p>
+                <p class="description">
+                    Designs system architecture, defines technical standards, and ensures scalability and maintainability of the Rush platform.
+                </p>
+            </div>
+
+            <div class="team-card">
+                <h2>Lead Developer</h2>
+                <p class="role">Development & Implementation</p>
+                <p class="description">
+                    Leads the development team, implements core features, and maintains code quality through reviews and best practices.
+                </p>
+            </div>
+
+            <div class="team-card">
+                <h2>UX/UI Designer</h2>
+                <p class="role">User Experience & Interface</p>
+                <p class="description">
+                    Creates intuitive and engaging user interfaces, conducts user research, and ensures consistent design patterns across the platform.
+                </p>
+            </div>
+
+            <div class="team-card">
+                <h2>QA Engineer</h2>
+                <p class="role">Quality Assurance</p>
+                <p class="description">
+                    Develops testing strategies, performs comprehensive testing, and ensures the platform meets quality standards before release.
+                </p>
+            </div>
+
+            <div class="team-card">
+                <h2>DevOps Specialist</h2>
+                <p class="role">Infrastructure & Deployment</p>
+                <p class="description">
+                    Manages deployment pipelines, infrastructure, monitoring, and ensures smooth operations of the Rush platform.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Rush Project Team. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
