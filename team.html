@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Rush</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .team-member {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .team-member h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #2d3748;
+        }
+        
+        .team-member .role {
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .team-member .bio {
+            color: #718096;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meet Our Team</h1>
+        <p>The people behind Rush</p>
+    </header>
+    
+    <div class="container">
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="avatar">A</div>
+                <h3>Alex Johnson</h3>
+                <div class="role">Founder & CEO</div>
+                <p class="bio">Visionary leader with 10+ years of experience in technology and innovation.</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="avatar">S</div>
+                <h3>Sarah Chen</h3>
+                <div class="role">Chief Technology Officer</div>
+                <p class="bio">Technical architect passionate about building scalable solutions.</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="avatar">M</div>
+                <h3>Michael Rodriguez</h3>
+                <div class="role">Head of Design</div>
+                <p class="bio">Creative designer focused on user-centered experiences.</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="avatar">E</div>
+                <h3>Emily Taylor</h3>
+                <div class="role">Product Manager</div>
+                <p class="bio">Strategic thinker driving product vision and execution.</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="avatar">D</div>
+                <h3>David Kim</h3>
+                <div class="role">Lead Developer</div>
+                <p class="bio">Full-stack engineer building robust and efficient systems.</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="avatar">J</div>
+                <h3>Jessica Martinez</h3>
+                <div class="role">Marketing Director</div>
+                <p class="bio">Growth expert connecting products with the right audience.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Rush. All rights reserved.</p>
+    </footer>
+</body>
+</html>
